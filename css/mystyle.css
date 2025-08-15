@@ -9,6 +9,8 @@
             line-height: 1.6;
             color: #ffffff;
             scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
         }
 
         /* Header Section */
@@ -65,6 +67,11 @@
             color: #1f2937;
             font-weight: 600;
         }
+
+        .navbar-toggler {
+            border: none;
+        }
+    
 
         /* Hero Section */
         .hero {
@@ -238,14 +245,42 @@
             object-fit: cover;
             border-radius: 20px;
         }
+        /* Skills Card */
+        .skills-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .skills-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
 
         /* Chart Container */
         .chart-container {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 24px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            height: fit-content;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            height: auto;
+        }
+
+        .chart-container canvas {
+            display: block;
+            width: 100% !important;
+            height: 280px !important;
+            max-height: 280px;
         }
 
         .chart-container h3 {
